@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public class UUIDIdentifier {
     public static void main(String[] args) {
-        String url = "jdbc:postgresql://database-1.c5mcis6q27ns.ap-south-1.rds.amazonaws.com:5432/postgres";
+        String url = "jdbc:postgresql://XXXXX:5432/postgres";
         Properties props = new Properties();
-        props.setProperty("user", "postgres");
-        props.setProperty("password", "ram123456");
+        props.setProperty("user", "XXXXX");
+        props.setProperty("password", "XXXXX");
 
         try (Connection conn = DriverManager.getConnection(url, props)) {
             long start = System.currentTimeMillis();
