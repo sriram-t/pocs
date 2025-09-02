@@ -76,4 +76,4 @@ The choice impacts:
 - Use **UUIDv7** for **large-scale distributed systems** (events, logs, analytics).
 - Use **UUIDv4** **only** if full randomness is a hard requirement (expect performance tradeoffs).
 
-📌 Benchmarks show that UUIDv7 is ~40% faster than UUIDv4 for inserts, with smaller index sizes due to reduced fragmentation. Additionally, for a database with 10M rows, UUIDv7 delivers ~20% faster performance on limit-based queries. As the dataset grows, these advantages compound, providing even greater benefits. 
+📌 Benchmarks show that UUIDv7 is ~40% faster than UUIDv4 for inserts, with smaller index sizes due to reduced fragmentation. Additionally, for a database with 10M rows, UUIDv7 delivers ~20% faster performance on limit-based queries. As the dataset grows, these advantages compound, providing even greater benefits.
