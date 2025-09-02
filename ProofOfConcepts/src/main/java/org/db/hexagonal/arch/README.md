@@ -102,4 +102,11 @@ This demonstrates how **Hexagonal Architecture** enforces clear separation betwe
    - Example: enterprise applications that outlast UI frameworks or DB engines.  
 
 
-If you dont think above will be the case 3 tier architecture will be sufficient in most cases :). 
+## 🎯 Rule of Thumb
+
+Use Hexagonal Architecture when:  
+- Your system has **complex logic** worth protecting.  
+- You anticipate **changes in external systems** (DB, APIs, UI).  
+- You need **flexibility and testability** as first-class citizens.  
+
+Avoid it for trivial apps — otherwise, you'll end up with too many layers and boilerplate for little gain.  
