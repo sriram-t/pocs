@@ -2,3 +2,5 @@ Jitter introduces random variation at the client level to prevent repeated, sync
 
 Most libraries support this out of the box, allowing you to add a jitter (random) factor along with
 the exponential backoff factor so that retries are not concentrated at the same time.
+
+Github Blog: https://medium.com/paypal-tech/thundering-herd-jitter-63a57b38919d
