@@ -1,6 +1,8 @@
 plugins {
     id("application")
     id("java")
+    id("org.springframework.boot") version "3.3.4"
+    id("io.spring.dependency-management") version "1.1.6"
 }
 
 group = "org.db"
@@ -12,7 +14,7 @@ java {
 }
 
 application {
-    mainClass.set("org.db.identifiers.UUIDIdentifier")
+    mainClass.set("org.db.serversentevents.RestAPIController")
 }
 
 repositories {
@@ -20,6 +22,8 @@ repositories {
 }
 
 dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.github.f4b6a3:uuid-creator:5.3.6")
     implementation("org.postgresql:postgresql:42.7.4")
     implementation("io.github.resilience4j:resilience4j-retry:2.1.0")
@@ -31,3 +35,4 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
