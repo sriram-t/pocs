@@ -14,7 +14,7 @@ java {
 }
 
 application {
-    mainClass.set("org.db.serversentevents.RestAPIController")
+    mainClass.set("org.db.consistenthashing.ConsistentHashing")
 }
 
 repositories {
